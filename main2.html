@@ -12,20 +12,6 @@
     <md-content layout="column" flex="" ng-class="{ 'c5e-nav-collapsed': !controller.navBarExpanded, 'c5e-nav-expanded': controller.navBarExpanded, 'c5e-mobile-nav-open': controller.mobileNavBarShown}" class="_md md-gmp-blue-theme layout-column flex c5e-nav-expanded">
         <fb-appbar fb-on-show-mobile-nav="controller.onShowMobileNav()" fb-show-project-switcher="true">
             <div class="fb-appbar-container">
-                <div class="fb-appbar-banner-container">
-                    <!---->
-                    <!---->
-                    <div class="fb-appbar-banner is-demo-project hide-xs" ng-if="appBar.isDemoProject" hide-xs="" ng-class="{'has-visible-nav-or-page-crumb': appBar.showAppBarCrumbs}" style="">
-                        This is a demo of the Firebase console
-                        <button class="md-raised md-primary md-gmp-blue-theme md-button md-ink-ripple" type="button" ng-transclude="" ng-click="appBar.onClickCreateProject()" aria-label="Create a project">
-                            Create a project
-                        </button>
-                        <button class="md-secondary md-gmp-blue-theme md-button md-ink-ripple" type="button" ng-transclude="" ng-click="appBar.exitDemo()" aria-label="Exit demo">
-                            Exit demo
-                        </button>
-                    </div>
-                    <!---->
-                </div>
                 <div class="fb-appbar" ng-class="{'has-visible-nav-or-page-crumb': appBar.showAppBarCrumbs}" style="">
                     <div class="fb-appbar-top-left fb-appbar-top-left-has-menu" ng-class="{'fb-appbar-top-left-has-menu': appBar.shouldShowTopLeftMenu()}">
                         <div class="fb-appbar-top-left-menu-container">
@@ -561,10 +547,9 @@
                                     <!---->
                                     <div md-cell="4" ng-repeat="featureCard in controller.featureCards" layout="column" class="layout-column">
                                         <md-card class="c5e-overview-feature-card _md md-gmp-blue-theme">
-
                                             <!---->
                                             <div ng-if="featureCard.bannerImage" class="c5e-overview-feature-card-banner-header">
-                                                <img ng-src="//www.gstatic.com/mobilesdk/160505_mobilesdk/discoverycards/2x/analytics.png" src="//www.gstatic.com/mobilesdk/160505_mobilesdk/discoverycards/2x/analytics.png">
+                                                <img ng-src="images/analytics.png" src="images/analytics.png">
                                             </div>
                                             <!---->
                                             <!---->
@@ -587,7 +572,7 @@
                                         <md-card class="c5e-overview-feature-card _md md-gmp-blue-theme">
                                             <!---->
                                             <div ng-if="featureCard.bannerImage" class="c5e-overview-feature-card-banner-header">
-                                                <img ng-src="//www.gstatic.com/mobilesdk/160505_mobilesdk/discoverycards/2x/auth.png" src="//www.gstatic.com/mobilesdk/160505_mobilesdk/discoverycards/2x/auth.png">
+                                                <img ng-src="images/auth.png" src="images/auth.png">
                                             </div>
                                             <!---->
                                             <!---->
