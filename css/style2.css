@@ -941,7 +941,11 @@ md-card md-card-header {
     -webkit-flex-direction: row;
     flex-direction: row
 }
-
+md-card.md-gmp-blue-theme {
+    color: rgba(0,0,0,0.87);
+    background-color: rgb(255,255,255);
+    border-radius: 2px;
+}
 md-card md-card-header:first-child md-card-avatar {
     margin-right: 12px
 }
@@ -66294,6 +66298,37 @@ md-card.c5e-project-help-box {
     top: -6px;
     -webkit-transform: rotate(45deg);
 :rotate(45deg);width: 16px
+}
+
+md-card.md-gmp-blue-theme {
+    color: rgba(0,0,0,0.87);
+    background-color: rgb(255,255,255);
+    border-radius: 2px;
+}
+
+.c5e-nav .gmp-icons, .c5e-nav .material-icons {
+    font-size: 20px;
+}
+
+.gmp-icons {
+    font-family: 'GMP Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga';
+    speak: none;
+    text-decoration: none;
 }
 
 sentinel {
