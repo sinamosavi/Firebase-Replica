@@ -12,51 +12,67 @@
 </section>
 <section name="side"></section>
 <section name="main">
-    <div style="overflow: auto; width: 50%">
-        <div md-cell="4" ng-repeat="featureCard in controller.featureCards" layout="column" class="layout-column">
-            <md-card class="c5e-overview-feature-card _md md-gmp-blue-theme">
-                <!---->
-                <div ng-if="featureCard.bannerImage" class="c5e-overview-feature-card-banner-header">
-                    <img src="images/analytics.png">
-                </div><!----> <!---->
-                <div class="c5e-overview-feature-card-content flex" flex="">
-                    <div class="c5e-overview-feature-card-title">Analytics</div>
-                    <div class="c5e-overview-feature-card-description">Get detailed analytics to measure and analyze how users engage with your app</div>
-                </div>
-                <div class="c5e-overview-feature-card-links layout-align-space-between-center layout-row" layout="row" layout-align="space-between center">
-                    <a fb-doc-href="/docs/analytics/" target="_blank" class="c5e-overview-feature-card-learnmore md-gmp-blue-theme" href="https://firebase.google.com/docs/analytics/?authuser=0">
-                        Learn more
-                    </a>
-                    <button class="md-primary c5e-overview-feature-card-getstarted md-button md-gmp-blue-theme md-ink-ripple" type="button" ng-transclude="" ng-hide="!featureCard.moduleName" ng-click="controller.featureCardClicked(featureCard)" aria-hidden="false">
-                        Get started
-                    </button>
-                </div>
-            </md-card>
-        </div>
-        <div md-cell="4" ng-repeat="featureCard in controller.featureCards" layout="column" class="layout-column">
-            <md-card class="c5e-overview-feature-card _md md-gmp-blue-theme">
-                <!---->
+    <div class="c5e-overview-feature-cards">
+        <div md-grid="">
+            <div md-cell="12">
+                <fb-canvas-bar>
+                    <div class="fb-canvas-bar-container" ng-transclude="">
+                        Discover Firebase
+                    </div>
+                </fb-canvas-bar>
+            </div>
+            <!---->
+            <div md-cell="4" ng-repeat="featureCard in controller.featureCards" layout="column" class="layout-column">
+                <md-card class="c5e-overview-feature-card _md md-gmp-blue-theme">
+                    <!---->
+                    <div ng-if="featureCard.bannerImage" class="c5e-overview-feature-card-banner-header">
+                        <img ng-src="images/analytics.png" src="images/analytics.png">
+                    </div>
+                    <!----> <!---->
+                    <div class="c5e-overview-feature-card-content flex" flex="">
+                        <div class="c5e-overview-feature-card-title">
+                            Analytics
+                        </div>
+                        <div class="c5e-overview-feature-card-description">
+                            Get detailed analytics to measure and analyze how users engage with your app
+                        </div>
+                    </div>
+                    <div class="c5e-overview-feature-card-links layout-align-space-between-center layout-row" layout="row" layout-align="space-between center">
+                        <a fb-doc-href="/docs/analytics/" target="_blank" class="c5e-overview-feature-card-learnmore md-gmp-blue-theme" href="https://firebase.google.com/docs/analytics/?authuser=0">
+                            Learn more
+                        </a>
+                        <button class="md-primary c5e-overview-feature-card-getstarted md-button md-gmp-blue-theme md-ink-ripple" type="button" ng-transclude="" ng-hide="!featureCard.moduleName" ng-click="controller.featureCardClicked(featureCard)" aria-hidden="false">
+                            Get started
+                        </button>
+                    </div>
+                </md-card>
+            </div>
+            <!---->
+            <div md-cell="4" ng-repeat="featureCard in controller.featureCards" layout="column" class="layout-column">
+                <md-card class="c5e-overview-feature-card _md md-gmp-blue-theme">
+            <!---->
                 <div ng-if="featureCard.bannerImage" class="c5e-overview-feature-card-banner-header">
                     <img ng-src="images/auth.png" src="images/auth.png">
                 </div>
-                <!----> <!---->
-                <div class="c5e-overview-feature-card-content flex" flex="">
-                    <div class="c5e-overview-feature-card-title">
-                        Authentication
+                    <!----> <!---->
+                    <div class="c5e-overview-feature-card-content flex" flex="">
+                        <div class="c5e-overview-feature-card-title">
+                            Authentication
+                        </div>
+                        <div class="c5e-overview-feature-card-description">
+                            Authenticate and manage users from a variety of providers without server-side code
+                        </div>
                     </div>
-                    <div class="c5e-overview-feature-card-description">
-                        Authenticate and manage users from a variety of providers without server-side code
+                    <div class="c5e-overview-feature-card-links layout-align-space-between-center layout-row" layout="row" layout-align="space-between center">
+                        <a fb-doc-href="/docs/auth/" target="_blank" class="c5e-overview-feature-card-learnmore md-gmp-blue-theme" href="https://firebase.google.com/docs/auth/?authuser=0">
+                            Learn more
+                        </a>
+                        <button class="md-primary c5e-overview-feature-card-getstarted md-button md-gmp-blue-theme md-ink-ripple" type="button" ng-transclude="" ng-hide="!featureCard.moduleName" ng-click="controller.featureCardClicked(featureCard)" aria-hidden="false">
+                            Get started
+                        </button>
                     </div>
-                </div>
-                <div class="c5e-overview-feature-card-links layout-align-space-between-center layout-row" layout="row" layout-align="space-between center">
-                    <a fb-doc-href="/docs/auth/" target="_blank" class="c5e-overview-feature-card-learnmore md-gmp-blue-theme" href="https://firebase.google.com/docs/auth/?authuser=0">
-                        Learn more
-                    </a>
-                    <button class="md-primary c5e-overview-feature-card-getstarted md-button md-gmp-blue-theme md-ink-ripple" type="button" ng-transclude="" ng-hide="!featureCard.moduleName" ng-click="controller.featureCardClicked(featureCard)" aria-hidden="false">
-                        Get started
-                    </button>
-                </div>
-            </md-card>
+                </md-card>
+            </div>
         </div>
     </div>
 </section>
