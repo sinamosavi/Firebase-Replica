@@ -5,13 +5,637 @@
     <title>Title
     </title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/style2-cleaned.css">
 </head>
-    <body class="c5e-nav-expanded">
-        <div ui-view="" class="console_viewport layout-column flex-100" layout="column" flex="100">
-            <md-content layout="column" flex="" ng-class="{ 'c5e-nav-collapsed': !controller.navBarExpanded, 'c5e-nav-expanded': controller.navBarExpanded, 'c5e-mobile-nav-open': controller.mobileNavBarShown}" class="_md md-gmp-blue-theme layout-column flex c5e-nav-expanded">
+<body role="application" cz-shortcut-listen="true" style="" class="">
+<div ui-view="" class="console_viewport layout-column" layout="column" flex="100">
+    <md-content layout="column" flex="" ng-class="{ 'c5e-nav-collapsed': !controller.navBarExpanded, 'c5e-nav-expanded': controller.navBarExpanded, 'c5e-mobile-nav-open': controller.mobileNavBarShown}" class="c5e-nav-expanded flex layout-column">
+        <fb-appbar fb-on-show-mobile-nav="controller.onShowMobileNav()" fb-show-project-switcher="true">
+            <div class="fb-appbar-container">
+                <div class="fb-appbar" ng-class="{'has-visible-nav-or-page-crumb': appBar.showAppBarCrumbs}" style="">
+                    <div class="fb-appbar-top-left fb-appbar-top-left-has-menu" ng-class="{'fb-appbar-top-left-has-menu': appBar.shouldShowTopLeftMenu()}">
+                        <div class="fb-appbar-top-left-menu-container">
+                            <button class="md-icon-button fb-appbar-nav-drawer-icon md-button md-ink-ripple md-dark-theme" type="button" ng-transclude="" md-theme="dark" ng-click="appBar.showMobileNav()" aria-label="Menu">
+                                <i class="material-icons">
+                                    menu
+                                </i>
+                            </button>
+                        </div>
+                        <button class="fb-appbar-logo-button md-button md-gmp-blue-theme md-ink-ripple" type="button" ng-transclude="" ng-click="appBar.goToHome()" aria-label="Go Home">
+                            <div class="c5e-logo-lockup">
+                                <img fb-logo="" fb-size="28" class="c5e-logo-lockup-icon" src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png">
+                                <h1 class="fb-appbar-logo-logotype-container">
+                                    <img src="images/firebase_logotype_white_18dp.svg" class="c5e-logo-lockup-logotype" alt="Firebase">
+                                </h1>
+                            </div>
+                        </button>
+                    </div>
+                    <!---->
+                    <div class="fb-appbar-nav-and-page-crumbs">
+                        <!---->
+                        <!---->
+                        <a class="fb-appbar-page-crumb is-key-mobile-crumb is-first-nav-crumb md-gmp-blue-theme is-hidden" ng-if="!!appBar.featureBarTitle" ng-click="appBar.onPageCrumbClick(null)" ng-class="{'is-hidden': !appBar.showAppBarCrumbs}" style="">
+                            Overview
+                        </a>
+                        <!---->
+                    </div>
+                    <div class="flex">
+                    </div>
+                    <div class="fb-appbar-action-crumbs">
+                        <a class="fb-appbar-action-crumb md-gmp-blue-theme ng-hide is-hidden" ng-show="appBar.actionCrumbs.length" ng-click="appBar.onActionCrumbClick(appBar.actionCrumbs[0])" ng-class="{'is-hidden': !appBar.showAppBarCrumbs, 'has-icon': !!appBar.actionCrumbs[0].icon}" aria-hidden="true" style="">
+                            <!---->
+                            <span>
 
-            </md-content>
+                            </span>
+                        </a>
+                    </div>
+                    <!---->
+                    <div class="fb-appbar-viewonly-chip fb-appbar-viewonly-chip-desktop" ng-if="::appBar.shouldShowViewOnlyChip()">
+                        View only
+                        <!---->
+                        <!---->
+                        <!---->
+                    </div>
+                    <!---->
+                    <a md-no-ink="" fb-doc-href="/docs/" target="_blank" class="fb-appbar-link md-gmp-blue-theme" href="https://firebase.google.com/docs/?authuser=0">
+                        Go to docs
+                    </a>
+                    <fb-alerts>
+                        <md-menu md-position-mode="target-right target" class="fb-appbar-more-actions-menu md-menu _md">
+                            <button class="md-icon-button md-button md-ink-ripple md-dark-theme" type="button" ng-transclude="" aria-label="Open menu" md-theme="dark" ng-click="$mdMenu.open($event)" aria-haspopup="true" aria-expanded="false" aria-owns="menu_container_2">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="_md md-open-menu-container md-whiteframe-z2" id="menu_container_2" aria-hidden="true" style="display: none;">
+                                <md-menu-content role="menu">
+                                    <md-menu-item>
+                                        <a class="md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" ui-sref="subscriptions.overview" role="menuitem" href="/subscriptions/overview">
+                                            Alert subscriptions
+                                        </a>
+                                    </md-menu-item>
+                                </md-menu-content>
+                            </div>
+                        </md-menu>
+                        <fb-alerts-effects ng-version="0.0.0-PLACEHOLDER">
+                        </fb-alerts-effects>
+                    </fb-alerts>
+                    <md-menu class="fb-appbar-mobile-overflow-menu md-menu _md" md-position-mode="target-right target">
+                        <button class="md-icon-button md-button md-ink-ripple md-dark-theme" type="button" ng-transclude="" md-theme="dark" ng-click="$mdMenu.open($event)" aria-label="More options" aria-haspopup="true" aria-expanded="false" aria-owns="menu_container_0">
+                            <i class="material-icons">
+                                more_vert
+                            </i>
+                        </button>
+                        <div class="_md md-open-menu-container md-whiteframe-z2" id="menu_container_0" style="display: none;" aria-hidden="true">
+                            <md-menu-content class="fb-appbar-mobile-overflow-content" role="menu">
+                                <!---->
+                                <!---->
+                                <!---->
+                                <md-menu-item>
+                                    <a class="c5e-external-link md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" href="https://firebase.google.com/docs/?authuser=0" fb-doc-href="/docs/" target="_blank" role="menuitem">
+                                        Firebase docs
+                                    </a>
+                                </md-menu-item>
+                                <!---->
+                                <md-menu-divider ng-if="appBar.isAlertSubscriptionsVisible()" role="separator">
+                                </md-menu-divider>
+                                <!---->
+                                <!---->
+                                <md-menu-item ng-if="appBar.isAlertSubscriptionsVisible()">
+                                    <a class="md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" ui-sref="subscriptions.overview" role="menuitem" href="/subscriptions/overview">
+                                        Alert subscriptions
+                                    </a>
+                                </md-menu-item>
+                                <!---->
+                            </md-menu-content>
+                        </div>
+                    </md-menu>
+                    <div class="fb-appbar-login-area" id="fb-account-container">
+                        <!---->
+                        <div id="ogc" class="fb-appbar-onegoogle-visible">
+                            <div class="gb_rc gb_Xd gb_rd gb_9b" id="gb">
+                                <div class="gb_tc gb_hb gb_sc gb_Td" ng-non-bindable="" style="padding:0;height:auto;display:block">
+                                    <div class="gb_uc" style="display:block">
+                                        <div class="gb_eb gb_Zc gb_tg gb_R gb_kf">
+                                            <div class="gb_Fc gb_gb gb_tg gb_R">
+                                                <a class="gb_b gb_cb gb_R" href="https://accounts.google.com/SignOutOptions?hl=en&amp;continue=https://console.firebase.google.com/project/fir-demo-project/overview" role="button" tabindex="0" aria-expanded="false">
+                                                    <span class="gb_7a gbii">
+                                                    </span>
+                                                </a>
+                                                <div class="gb_mb">
+                                                </div>
+                                                <div class="gb_lb">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <fb-alerts-drawer>
+            </fb-alerts-drawer>
+            <fb-critical-alerts ng-class="{'fb-critical-alerts-with-banner': appBar.showConfidentialBanner}">
+            </fb-critical-alerts>
+        </fb-appbar>
+        <div class="c5e-modulehost-container flex layout-row" layout="row" flex="">
+            <fb-navbar fb-on-toggle="controller.onNavBarToggle()" fb-on-nav-target-click="controller.onHideMobileNav()" class="">
+                <div class="c5e-nav">
+                    <button class="c5e-nav-mobile-logo-button" type="button" ng-transclude="" ng-click="controller.goToHome()" aria-label="Go Home">
+                        <div class="c5e-logo-lockup">
+                            <img class="c5e-logo-lockup-icon" fb-logo="" fb-size="28" src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png">
+                            <img class="c5e-logo-lockup-logotype" src="//www.gstatic.com/mobilesdk/160323_mobilesdk/images/firebase_logotype_black_18dp.svg" alt="Firebase">
+                        </div>
+                    </button>
+                    <div class="c5e-nav-group c5e-nav-group-root">
+                        <!---->
+                        <fb-navbar-item ng-if="::!!controller.overview" class="c5e-navbar-item-overview" nav-entry="::controller.overview" fb-click="controller.navTargetClick()">
+                            <a class="c5e-nav-item md-gmp-blue-theme c5e-selected-entry" href="/project/fir-demo-project/overview" ng-class="::{'c5e-selected-entry': $ctrl.isSelected}" ng-click="$ctrl.onClick()" aria-label="Overview">
+                                <div class="c5e-nav-item-lockup">
+                                    <i class="c5e-nav-icon gmp-icons" ng-class="::{ 'gmp-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.GMP, 'material-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.MATERIAL }">
+                                        gmp_nav20_overview
+                                    </i>
+                                    <span class="c5e-entry-displayname">
+                                        Overview
+                                    </span>
+                                </div>
+                            </a>
+                        </fb-navbar-item>
+                        <!---->
+                        <!---->
+                        <!---->
+                        <md-menu class="c5e-navbar-item-settings md-menu _md c5e-navbar-item-settings-expanded" ng-if="::!!controller.settings" ng-repeat="settingsItemType in ::['expanded', 'collapsed']" ng-class="::['c5e-navbar-item-settings-' + settingsItemType]" md-offset="40 0" md-position-mode="target target">
+                            <button class="md-button md-gmp-blue-theme md-ink-ripple md-icon-button" type="button" ng-transclude="" ng-click="$mdMenu.open($event)" aria-label="Settings" ng-class="{'c5e-selected-entry': controller.currentModuleName == controller.settings.name, 'md-icon-button': settingsItemType == 'expanded'}" aria-haspopup="true" aria-expanded="false" aria-owns="menu_container_4">
+                                <i class="c5e-nav-icon gmp-icons">gmp_nav20_settings
+                                </i>
+                            </button>
+                            <div class="_md md-open-menu-container md-whiteframe-z2" id="menu_container_4" aria-hidden="true" style="display: none;">
+                                <md-menu-content class="c5e-navbar-settings-menu-content" role="menu">
+                                    <md-menu-item>
+                                        <a class="md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" href="/project/fir-demo-project/settings/general/" ng-click="controller.navEntryClick(controller.settings)" role="menuitem">
+                                            Project settings
+                                        </a>
+                                    </md-menu-item>
+                                    <md-menu-divider role="separator">
+                                    </md-menu-divider>
+                                    <div class="fb-menu-section-header c5e-navbar-settings-menu-cloud-header">
+                                        Managed in Google Cloud Console
+                                    </div>
+                                    <!---->
+                                    <md-menu-item ng-if="!!controller.billingUrl">
+                                        <a class="c5e-external-link md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" ng-href="https://console.cloud.google.com/billing/007CF4-B56D9B-5EBD0C/history?consoleUI=FIREBASE&amp;authuser=0&amp;consoleReturnUrl=https%3A%2F%2Fconsole.firebase.google.com%2Fproject%2Ffir-demo-project%2Foverview" ng-click="controller.navTargetClick()" target="_blank" role="menuitem" href="https://console.cloud.google.com/billing/007CF4-B56D9B-5EBD0C/history?consoleUI=FIREBASE&amp;authuser=0&amp;consoleReturnUrl=https%3A%2F%2Fconsole.firebase.google.com%2Fproject%2Ffir-demo-project%2Foverview">
+                                            Billing
+                                        </a>
+                                    </md-menu-item>
+                                    <!---->
+                                    <md-menu-item>
+                                        <a class="c5e-external-link md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" ng-href="https://console.cloud.google.com/permissions/projectpermissions?consoleUI=FIREBASE&amp;authuser=0&amp;project=fir-demo-project&amp;consoleReturnUrl=https%3A%2F%2Fconsole.firebase.google.com%2Fproject%2Ffir-demo-project%2Foverview" ng-click="controller.navTargetClick()" target="_blank" role="menuitem" href="https://console.cloud.google.com/permissions/projectpermissions?consoleUI=FIREBASE&amp;authuser=0&amp;project=fir-demo-project&amp;consoleReturnUrl=https%3A%2F%2Fconsole.firebase.google.com%2Fproject%2Ffir-demo-project%2Foverview">
+                                            Users and permissions
+                                        </a>
+                                    </md-menu-item>
+                                </md-menu-content>
+                            </div>
+                        </md-menu>
+                        <!---->
+                        <!---->
+                        <!---->
+                        <md-menu class="c5e-navbar-item-settings md-menu _md c5e-navbar-item-settings-collapsed" ng-if="::!!controller.settings" ng-repeat="settingsItemType in ::['expanded', 'collapsed']" ng-class="::['c5e-navbar-item-settings-' + settingsItemType]" md-offset="68 0" md-position-mode="target target">
+                            <button class="md-button md-gmp-blue-theme md-ink-ripple" type="button" ng-transclude="" ng-click="$mdMenu.open($event)" aria-label="Settings" ng-class="{'c5e-selected-entry': controller.currentModuleName == controller.settings.name, 'md-icon-button': settingsItemType == 'expanded'}" aria-haspopup="true" aria-expanded="false" aria-owns="menu_container_6">
+                                <i class="c5e-nav-icon gmp-icons">
+                                    gmp_nav20_settings
+                                </i>
+                            </button>
+                            <div class="_md md-open-menu-container md-whiteframe-z2" id="menu_container_6" aria-hidden="true" style="display: none;">
+                                <md-menu-content class="c5e-navbar-settings-menu-content" role="menu">
+                                    <md-menu-item>
+                                        <a class="md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" href="/project/fir-demo-project/settings/general/" ng-click="controller.navEntryClick(controller.settings)" role="menuitem">
+                                            Project settings
+                                        </a>
+                                    </md-menu-item>
+                                    <md-menu-divider role="separator">
+                                    </md-menu-divider>
+                                    <div class="fb-menu-section-header c5e-navbar-settings-menu-cloud-header">
+                                        Managed in Google Cloud Console
+                                    </div>
+                                    <!---->
+                                    <md-menu-item ng-if="!!controller.billingUrl">
+                                        <a class="c5e-external-link md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" ng-href="https://console.cloud.google.com/billing/007CF4-B56D9B-5EBD0C/history?consoleUI=FIREBASE&amp;authuser=0&amp;consoleReturnUrl=https%3A%2F%2Fconsole.firebase.google.com%2Fproject%2Ffir-demo-project%2Foverview" ng-click="controller.navTargetClick()" target="_blank" role="menuitem" href="https://console.cloud.google.com/billing/007CF4-B56D9B-5EBD0C/history?consoleUI=FIREBASE&amp;authuser=0&amp;consoleReturnUrl=https%3A%2F%2Fconsole.firebase.google.com%2Fproject%2Ffir-demo-project%2Foverview">
+                                            Billing
+                                        </a>
+                                    </md-menu-item>
+                                    <!---->
+                                    <md-menu-item>
+                                        <a class="c5e-external-link md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" ng-href="https://console.cloud.google.com/permissions/projectpermissions?consoleUI=FIREBASE&amp;authuser=0&amp;project=fir-demo-project&amp;consoleReturnUrl=https%3A%2F%2Fconsole.firebase.google.com%2Fproject%2Ffir-demo-project%2Foverview" ng-click="controller.navTargetClick()" target="_blank" role="menuitem" href="https://console.cloud.google.com/permissions/projectpermissions?consoleUI=FIREBASE&amp;authuser=0&amp;project=fir-demo-project&amp;consoleReturnUrl=https%3A%2F%2Fconsole.firebase.google.com%2Fproject%2Ffir-demo-project%2Foverview">
+                                            Users and permissions
+                                        </a>
+                                    </md-menu-item>
+                                </md-menu-content>
+                            </div>
+                        </md-menu>
+                        <!---->
+                        <!---->
+                    </div>
+                    <div class="c5e-nav-group c5e-nav-group-top">
+                        <!---->
+                        <!---->
+                        <fb-navbar-item ng-if="::controller.rootGroup.entries.length > 0" ng-repeat="entry in ::controller.rootGroup.entries track by entry.name" nav-entry="::entry" fb-click="controller.navTargetClick()">
+                            <a class="c5e-nav-item md-gmp-blue-theme" href="/project/fir-demo-project/analytics" ng-class="::{'c5e-selected-entry': $ctrl.isSelected}" ng-click="$ctrl.onClick()" aria-label="Analytics">
+                                <div class="c5e-nav-item-lockup">
+                                    <i class="c5e-nav-icon gmp-icons" ng-class="::{ 'gmp-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.GMP, 'material-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.MATERIAL }">
+                                        gmp_nav20_analytics
+                                    </i>
+                                    <span class="c5e-entry-displayname">
+                                        Analytics
+                                    </span>
+                                </div>
+                            </a>
+                        </fb-navbar-item>
+                        <!---->
+                        <!---->
+                    </div>
+                    <!---->
+                    <!---->
+                    <div class="c5e-nav-group c5e-nav-group-develop" ng-repeat="group in ::controller.navGroups track by group.groupName" ng-if="::group.entries.length > 0">
+                        <div class="c5e-nav-heading">
+                            develop
+                        </div>
+                        <!---->
+                        <fb-navbar-item class="develop" ng-repeat="entry in ::group.entries track by entry.name" nav-entry="::entry" fb-click="controller.navTargetClick()">
+                            <a class="c5e-nav-item md-gmp-blue-theme" href="/project/fir-demo-project/authentication/users" ng-class="::{'c5e-selected-entry': $ctrl.isSelected}" ng-click="$ctrl.onClick()" aria-label="Authentication">
+                                <div class="c5e-nav-item-lockup">
+                                    <i class="c5e-nav-icon gmp-icons" ng-class="::{ 'gmp-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.GMP, 'material-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.MATERIAL }">
+                                        gmp_nav20_auth
+                                    </i>
+                                    <span class="c5e-entry-displayname">
+                                        Authentication
+                                    </span>
+                                </div>
+                            </a>
+                        </fb-navbar-item>
+                        <!---->
+                        <fb-navbar-item class="develop" ng-repeat="entry in ::group.entries track by entry.name" nav-entry="::entry" fb-click="controller.navTargetClick()">
+                            <a class="c5e-nav-item md-gmp-blue-theme" href="/project/fir-demo-project/database" ng-class="::{'c5e-selected-entry': $ctrl.isSelected}" ng-click="$ctrl.onClick()" aria-label="Database">
+                                <div class="c5e-nav-item-lockup">
+                                    <i class="c5e-nav-icon gmp-icons" ng-class="::{ 'gmp-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.GMP, 'material-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.MATERIAL }">
+                                        gmp_nav20_database
+                                    </i>
+                                    <span class="c5e-entry-displayname">
+                                        Database
+                                    </span>
+                                </div>
+                            </a>
+                        </fb-navbar-item>
+                        <!---->
+                        <fb-navbar-item class="develop" ng-repeat="entry in ::group.entries track by entry.name" nav-entry="::entry" fb-click="controller.navTargetClick()">
+                            <a class="c5e-nav-item md-gmp-blue-theme" href="/project/fir-demo-project/storage/files" ng-class="::{'c5e-selected-entry': $ctrl.isSelected}" ng-click="$ctrl.onClick()" aria-label="Storage">
+                                <div class="c5e-nav-item-lockup">
+                                    <i class="c5e-nav-icon gmp-icons" ng-class="::{ 'gmp-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.GMP, 'material-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.MATERIAL }">
+                                        gmp_nav20_storage
+                                    </i>
+                                    <span class="c5e-entry-displayname">
+                                        Storage
+                                    </span>
+                                </div>
+                            </a>
+                        </fb-navbar-item>
+                        <!---->
+                        <fb-navbar-item class="develop" ng-repeat="entry in ::group.entries track by entry.name" nav-entry="::entry" fb-click="controller.navTargetClick()">
+
+                            <a class="c5e-nav-item md-gmp-blue-theme" href="/project/fir-demo-project/hosting" ng-class="::{'c5e-selected-entry': $ctrl.isSelected}" ng-click="$ctrl.onClick()" aria-label="Hosting">
+                                <div class="c5e-nav-item-lockup">
+                                    <i class="c5e-nav-icon gmp-icons" ng-class="::{ 'gmp-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.GMP, 'material-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.MATERIAL }">gmp_nav20_hosting
+                                    </i>
+                                    <span class="c5e-entry-displayname">
+                                        Hosting
+                                    </span>
+                                </div>
+                            </a>
+                        </fb-navbar-item>
+                        <!---->
+                        <fb-navbar-item class="develop" ng-repeat="entry in ::group.entries track by entry.name" nav-entry="::entry" fb-click="controller.navTargetClick()">
+                            <a class="c5e-nav-item md-gmp-blue-theme" href="/project/fir-demo-project/functions/list" ng-class="::{'c5e-selected-entry': $ctrl.isSelected}" ng-click="$ctrl.onClick()" aria-label="Functions">
+                                <div class="c5e-nav-item-lockup">
+                                    <i class="c5e-nav-icon gmp-icons" ng-class="::{ 'gmp-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.GMP, 'material-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.MATERIAL }">gmp_nav20_functions
+                                    </i>
+                                    <span class="c5e-entry-displayname">
+                                        Functions
+                                    </span>
+                                </div>
+                            </a>
+                        </fb-navbar-item>
+                        <!---->
+                        <fb-navbar-item class="develop" ng-repeat="entry in ::group.entries track by entry.name" nav-entry="::entry" fb-click="controller.navTargetClick()">
+                            <a class="c5e-nav-item md-gmp-blue-theme" href="/project/fir-demo-project/testlab/histories" ng-class="::{'c5e-selected-entry': $ctrl.isSelected}" ng-click="$ctrl.onClick()" aria-label="Test Lab">
+                                <div class="c5e-nav-item-lockup">
+                                    <i class="c5e-nav-icon gmp-icons" ng-class="::{ 'gmp-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.GMP, 'material-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.MATERIAL }">gmp_nav20_test_lab
+                                    </i>
+                                    <span class="c5e-entry-displayname">
+                                        Test Lab
+                                    </span>
+                                </div>
+                            </a>
+                        </fb-navbar-item>
+                        <!---->
+                        <fb-navbar-item class="develop" ng-repeat="entry in ::group.entries track by entry.name" nav-entry="::entry" fb-click="controller.navTargetClick()">
+                            <a class="c5e-nav-item md-gmp-blue-theme" href="/project/fir-demo-project/monitoring" ng-class="::{'c5e-selected-entry': $ctrl.isSelected}" ng-click="$ctrl.onClick()" aria-label="Crash Reporting">
+
+                                <div class="c5e-nav-item-lockup">
+                                    <i class="c5e-nav-icon gmp-icons" ng-class="::{ 'gmp-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.GMP, 'material-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.MATERIAL }">gmp_nav20_crash
+                                    </i>
+                                    <span class="c5e-entry-displayname">
+                                        Crash Reporting
+                                    </span>
+                                </div>
+                            </a>
+                        </fb-navbar-item>
+                        <!---->
+                        <fb-navbar-item class="develop" ng-repeat="entry in ::group.entries track by entry.name" nav-entry="::entry" fb-click="controller.navTargetClick()">
+                            <a class="c5e-nav-item md-gmp-blue-theme" href="/project/fir-demo-project/performance" ng-class="::{'c5e-selected-entry': $ctrl.isSelected}" ng-click="$ctrl.onClick()" aria-label="Performance">
+                                <div class="c5e-nav-item-lockup">
+                                    <i class="c5e-nav-icon material-icons" ng-class="::{ 'gmp-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.GMP, 'material-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.MATERIAL }">swap_driving_apps_wheel
+                                    </i>
+                                    <span class="c5e-entry-displayname">
+                                        Performance
+                                    </span>
+                                </div>
+                            </a>
+                        </fb-navbar-item>
+                        <!---->
+                    </div>
+                    <!---->
+                    <!---->
+                    <!---->
+                    <div class="c5e-nav-group c5e-nav-group-grow" ng-repeat="group in ::controller.navGroups track by group.groupName" ng-if="::group.entries.length > 0">
+                        <div class="c5e-nav-heading">grow
+                        </div>
+                        <!---->
+                        <fb-navbar-item class="grow" ng-repeat="entry in ::group.entries track by entry.name" nav-entry="::entry" fb-click="controller.navTargetClick()">
+                            <a class="c5e-nav-item md-gmp-blue-theme" href="/project/fir-demo-project/notification" ng-class="::{'c5e-selected-entry': $ctrl.isSelected}" ng-click="$ctrl.onClick()" aria-label="Notifications">
+                                <div class="c5e-nav-item-lockup">
+                                    <i class="c5e-nav-icon gmp-icons" ng-class="::{ 'gmp-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.GMP, 'material-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.MATERIAL }">gmp_nav20_notifications
+                                    </i>
+                                    <span class="c5e-entry-displayname">
+                                        Notifications
+                                    </span>
+                                </div>
+                            </a>
+                        </fb-navbar-item>
+                        <!---->
+                        <fb-navbar-item class="grow" ng-repeat="entry in ::group.entries track by entry.name" nav-entry="::entry" fb-click="controller.navTargetClick()">
+                            <a class="c5e-nav-item md-gmp-blue-theme" href="/project/fir-demo-project/config" ng-class="::{'c5e-selected-entry': $ctrl.isSelected}" ng-click="$ctrl.onClick()" aria-label="Remote Config">
+                                <div class="c5e-nav-item-lockup">
+                                    <i class="c5e-nav-icon gmp-icons" ng-class="::{ 'gmp-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.GMP, 'material-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.MATERIAL }">gmp_nav20_remote_config
+                                    </i>
+                                    <span class="c5e-entry-displayname">
+                                        Remote Config
+                                    </span>
+                                </div>
+                            </a>
+                        </fb-navbar-item>
+                        <!---->
+                        <fb-navbar-item class="grow" ng-repeat="entry in ::group.entries track by entry.name" nav-entry="::entry" fb-click="controller.navTargetClick()">
+                            <a class="c5e-nav-item md-gmp-blue-theme" href="/project/fir-demo-project/durablelinks" ng-class="::{'c5e-selected-entry': $ctrl.isSelected}" ng-click="$ctrl.onClick()" aria-label="Dynamic Links">
+                                <div class="c5e-nav-item-lockup">
+
+                                    <i class="c5e-nav-icon gmp-icons" ng-class="::{ 'gmp-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.GMP, 'material-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.MATERIAL }">gmp_nav20_durable_links
+                                    </i>
+                                    <span class="c5e-entry-displayname">
+                                        Dynamic Links
+                                    </span>
+                                </div>
+                            </a>
+                        </fb-navbar-item>
+                        <!---->
+                    </div>
+                    <!---->
+                    <!---->
+                    <!---->
+                    <div class="c5e-nav-group c5e-nav-group-earn" ng-repeat="group in ::controller.navGroups track by group.groupName" ng-if="::group.entries.length > 0">
+                        <div class="c5e-nav-heading">earn
+                        </div>
+                        <!---->
+                        <fb-navbar-item class="earn" ng-repeat="entry in ::group.entries track by entry.name" nav-entry="::entry" fb-click="controller.navTargetClick()">
+                            <a class="c5e-nav-item md-gmp-blue-theme" href="/project/fir-demo-project/admob" ng-class="::{'c5e-selected-entry': $ctrl.isSelected}" ng-click="$ctrl.onClick()" aria-label="AdMob">
+                                <div class="c5e-nav-item-lockup">
+                                    <i class="c5e-nav-icon gmp-icons" ng-class="::{ 'gmp-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.GMP, 'material-icons': $ctrl.navEntry.iconFamily == $ctrl.iconFamily.MATERIAL }">gmp_nav20_admob
+                                    </i>
+                                    <span class="c5e-entry-displayname">
+                                        AdMob
+                                    </span>
+                                </div>
+                            </a>
+                        </fb-navbar-item>
+                        <!---->
+                    </div>
+                    <!---->
+                    <!---->
+                </div>
+                <div class="c5e-nav-footer">
+                    <fb-navbar-billing-widget>
+                        <!---->
+                        <div class="c5e-nav-billing" ng-if="::controller.billingBarInfo">
+                            <div layout="column" flex="" class="layout-column flex">
+                                <div class="c5e-nav-billing-text">Blaze
+                                </div>
+                                <div class="c5e-nav-billing-details" ng-bind-html="controller.billingBarInfo.subtitle">
+                                    <span>
+                                        Pay as you go
+                                    </span>
+                                </div>
+
+                            </div>
+                            <!---->
+                            <!---->
+                            <div class="fb-role-disabled-popover-container">
+                                <button class="c5e-nav-upgrade-button md-primary md-button md-gmp-blue-theme md-ink-ripple" type="button" ng-transclude="" ng-if="controller.billingBarInfo.upgradeType == controller.BillingUpgradeTypes.MODIFY" fb-role-required="owner" fb-role-disabled="popover" fb-popover-position="right" fb-popover-alignment="middle" fb-popover-text="You cannot modify this plan because you are not an owner on this project" ng-click="controller.onUpgradeBillingClick()" disabled="disabled" ng-disabled="true">
+                                    <div> Modify
+                                    </div>
+                                </button>
+                                <div class="fb-disabled-popover">
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                        <!---->
+                    </fb-navbar-billing-widget>
+                </div>
+                <button class="c5e-nav-expando md-button md-gmp-blue-theme md-ink-ripple" type="button" ng-transclude="" ng-click="controller.toggleExpandState()">
+                    <i class="material-icons">chevron_left
+                    </i>
+                </button>
+            </fb-navbar>
+            <div layout="column" flex="" class="c5e-modulehost-content" transition-spinner="">
+                <!---->
+                <!---->
+                <ng-transclude layout-fill="" ng-if="state!=STATES.LOADING" class="">
+                    <fb-feature-bar>
+                        <div class="fb-featurebar">
+                            <!---->
+                            <div class="fb-featurebar-main">
+                                <div class="fb-featurebar-title-lockup fb-featurebar-space-consumer" ng-class="{'fb-featurebar-space-consumer': !featureBar.hasAnySelector}">
+                                    <!---->
+                                    <div class="fb-featurebar-title">Overview
+                                    </div>
+                                    <!---->
+                                </div>
+                                <!---->
+                                <!---->
+                                <!---->
+                                <div ng-if="featureBar.showHelpButton" class="fb-featurebar-help-container">
+                                    <md-menu class="fb-featurebar-help-menu md-menu _md" md-position-mode="target-right target">
+                                        <div>
+                                            <button class="md-icon-button fb-featurebar-help-button md-button md-ink-ripple md-dark-theme" type="button" ng-transclude="" md-theme="dark" ng-click="$mdMenu.open($event)" aria-label="Help" aria-haspopup="true" aria-expanded="false" aria-owns="menu_container_24">
+                                                <i class="material-icons">help
+                                                </i>
+                                            </button>
+                                        </div>
+                                        <div class="_md md-open-menu-container md-whiteframe-z2" id="menu_container_24" aria-hidden="true" style="display: none;">
+                                            <md-menu-content role="menu">
+                                                <!---->
+                                                <md-menu-item ng-repeat="destination in featureBar.helpDestinations | orderBy:'weight'">
+                                                    <a class="md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" ng-href="https://firebase.google.com/support/guides/launch-checklist?authuser=0" target="_blank" role="menuitem" href="https://firebase.google.com/support/guides/launch-checklist?authuser=0"> Firebase Launch Checklist
+                                                    </a>
+                                                </md-menu-item>
+                                                <!---->
+                                                <!---->
+                                                <md-menu-divider ng-if="featureBar.helpDestinations.length > 0" role="separator">
+                                                </md-menu-divider>
+                                                <!---->
+                                                <md-menu-item>
+                                                    <a class="md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" href="http://support.google.com/firebase" target="_blank" role="menuitem"> Firebase Help Center
+                                                    </a>
+                                                </md-menu-item>
+                                                <md-menu-item>
+                                                    <a class="md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" href="https://firebase.google.com/docs/?authuser=0" fb-doc-href="/docs/" target="_blank" role="menuitem"> Firebase Developer Docs
+                                                    </a>
+                                                </md-menu-item>
+                                                <md-menu-item>
+                                                    <a class="md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" href="https://firebase.google.com/support/?authuser=0" fb-doc-href="/support/" target="_blank" role="menuitem"> Firebase Support
+                                                    </a>
+                                                </md-menu-item>
+                                            </md-menu-content>
+                                        </div>
+                                    </md-menu>
+                                    <!---->
+                                </div>
+                                <!---->
+                            </div>
+                            <fb-core-chrome-feature-bar-tabs>
+                                <!---->
+                            </fb-core-chrome-feature-bar-tabs>
+                        </div>
+                    </fb-feature-bar>
+                    <!---->
+                    <div ui-view="module_content" layout="column" class="">
+                        <!---->
+                        <div ui-view="_module_overview">
+                            <fb-core-chrome-feature-bar-help-destination fb-doc-help-href="/support/guides/launch-checklist" fb-label="Firebase Launch Checklist">
+                            </fb-core-chrome-feature-bar-help-destination>
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                            <div class="c5e-overview-feature-cards">
+                                <div md-grid="">
+                                    <div md-cell="12">
+                                        <fb-canvas-bar>
+                                            <div class="fb-canvas-bar-container" ng-transclude=""> Discover Firebase
+                                            </div>
+                                        </fb-canvas-bar>
+                                    </div>
+                                    <!---->
+                                    <div md-cell="4" ng-repeat="featureCard in controller.featureCards" layout="column" class="layout-column">
+                                        <md-card class="c5e-overview-feature-card _md md-gmp-blue-theme">
+                                            <!---->
+                                            <div ng-if="featureCard.bannerImage" class="c5e-overview-feature-card-banner-header">
+                                                <img ng-src="images/analytics.png" src="images/analytics.png">
+                                            </div>
+                                            <!---->
+                                            <!---->
+                                            <div class="c5e-overview-feature-card-content flex" flex="">
+                                                <div class="c5e-overview-feature-card-title">Analytics
+                                                </div>
+                                                <div class="c5e-overview-feature-card-description">Get detailed analytics to measure and analyze how users engage with your app
+                                                </div>
+                                            </div>
+                                            <div class="c5e-overview-feature-card-links layout-align-space-between-center layout-row" layout="row" layout-align="space-between center">
+                                                <a fb-doc-href="/docs/analytics/" target="_blank" class="c5e-overview-feature-card-learnmore md-gmp-blue-theme" href="https://firebase.google.com/docs/analytics/?authuser=0"> Learn more
+                                                </a>
+                                                <button class="md-primary c5e-overview-feature-card-getstarted md-button md-gmp-blue-theme md-ink-ripple" type="button" ng-transclude="" ng-hide="!featureCard.moduleName" ng-click="controller.featureCardClicked(featureCard)" aria-hidden="false"> Get started
+                                                </button>
+                                            </div>
+                                        </md-card>
+                                    </div>
+                                    <!---->
+                                    <div md-cell="4" ng-repeat="featureCard in controller.featureCards" layout="column" class="layout-column">
+                                        <md-card class="c5e-overview-feature-card _md md-gmp-blue-theme">
+                                            <!---->
+                                            <div ng-if="featureCard.bannerImage" class="c5e-overview-feature-card-banner-header">
+                                                <img ng-src="images/auth.png" src="images/auth.png">
+                                            </div>
+                                            <!---->
+                                            <!---->
+                                            <div class="c5e-overview-feature-card-content flex" flex="">
+                                                <div class="c5e-overview-feature-card-title">Authentication
+                                                </div>
+                                                <div class="c5e-overview-feature-card-description">Authenticate and manage users from a variety of providers without server-side code
+                                                </div>
+                                            </div>
+                                            <div class="c5e-overview-feature-card-links layout-align-space-between-center layout-row" layout="row" layout-align="space-between center">
+                                                <a fb-doc-href="/docs/auth/" target="_blank" class="c5e-overview-feature-card-learnmore md-gmp-blue-theme" href="https://firebase.google.com/docs/auth/?authuser=0"> Learn more
+                                                </a>
+                                                <button class="md-primary c5e-overview-feature-card-getstarted md-button md-gmp-blue-theme md-ink-ripple" type="button" ng-transclude="" ng-hide="!featureCard.moduleName" ng-click="controller.featureCardClicked(featureCard)" aria-hidden="false"> Get started
+                                                </button>
+                                            </div>
+                                        </md-card>
+                                    </div>
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                </div>
+                                <div class="c5e-overview-console-footer">
+                                    <console-footer>
+                                        <div class="c5e-footer">
+                                            <div md-grid="">
+                                                <div md-cell="12" layout="row" layout-align="center start" class="layout-align-center-start layout-row">
+                                                    <a target="_blank" fb-doc-href="/terms" class="md-gmp-blue-theme" href="https://firebase.google.com/terms?authuser=0">
+                                                        Terms
+
+                                                    </a> &nbsp;&nbsp;·&nbsp;&nbsp;
+                                                    <a target="_blank" href="https://www.google.com/policies/privacy/" class="md-gmp-blue-theme">Privacy Policy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </console-footer>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                </ng-transclude>
+                <!---->
+            </div>
         </div>
-    </body>
+        <div class="" ng-click="controller.onHideMobileNav()" role="button" tabindex="0">
+        </div>
+    </md-content>
+    <fb-build-info>
+    </fb-build-info>
+</div>
+
+</body>
 </html>
