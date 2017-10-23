@@ -2,27 +2,6 @@ md-autocomplete input:not(.md-input)::-ms-clear {
     display: none
 }
 
-@media screen and (-ms-high-contrast:active) {
-}
-
-@media screen and (-ms-high-contrast:active) {
-}
-
-@media (max-width: 960px) {
-}
-
-@media (min-width: 960px) and (max-width:1279px) {
-}
-
-@media (min-width: 1280px) and (max-width:1919px) {
-}
-
-@media (min-width: 1920px) {
-}
-
-@media screen and (-ms-high-contrast:active) {
-}
-
 button.md-button::-moz-focus-inner {
     border: 0
 }
@@ -85,9 +64,6 @@ button.md-button::-moz-focus-inner {
     border-radius: 50%
 }
 
-@media screen and (-ms-high-contrast:active) {
-}
-
 md-card {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -118,9 +94,6 @@ md-card.md-gmp-blue-theme {
     md-card {
         border: 1px solid #fff
     }
-}
-
-@media screen and (-ms-high-contrast:active) {
 }
 
 md-content {
@@ -196,9 +169,6 @@ input:-webkit-autofill {
     to {
         opacity: 0
     }
-}
-
-@media (min-width: 960px) {
 }
 
 html,body {
@@ -313,33 +283,6 @@ select,button,textarea,input {
     flex-direction: row
 }
 
-@media (max-width: 599px) {
-}
-
-@media (min-width: 600px) {
-}
-
-@media (min-width: 600px) and (max-width:959px) {
-}
-
-@media (min-width: 960px) {
-}
-
-@media (min-width: 960px) and (max-width:1279px) {
-}
-
-@media (min-width: 1280px) {
-}
-
-@media (min-width: 1280px) and (max-width:1919px) {
-}
-
-@media (min-width: 1920px) {
-}
-
-@media print {
-}
-
 .md-calendar-scroll-mask .md-virtual-repeat-scroller::-webkit-scrollbar {
     display: none
 }
@@ -348,20 +291,8 @@ select,button,textarea,input {
     display: none
 }
 
-@media screen and (-ms-high-contrast:active) {
-}
-
-@media (max-width: 959px) {
-}
-
-@media screen and (-ms-high-contrast:active) {
-}
-
 md-input-container:not(.md-input-has-value) input:not(:focus),md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-ampm-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-day-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-hour-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-millisecond-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-minute-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-month-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-second-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-week-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-year-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-text {
     color: transparent
-}
-
-@media screen and (-ms-high-contrast:active) {
 }
 
 .md-open-menu-container {
@@ -819,21 +750,6 @@ md-menu-item>.md-button::-moz-focus-inner {
     }
 }
 
-@media screen and (-ms-high-contrast:active) {
-}
-
-@media screen and (-ms-high-contrast:active) {
-}
-
-@media (min-width: 600px) {
-}
-
-@media (max-width: 456px) {
-}
-
-@media screen and (-ms-high-contrast:active) {
-}
-
 @-webkit-keyframes sliderFocusThumb {
     0% {
         -webkit-transform: scale(0.7);
@@ -958,9 +874,6 @@ md-menu-item>.md-button::-moz-focus-inner {
     }
 }
 
-@media screen and (-ms-high-contrast:active) {
-}
-
 @-webkit-keyframes subheaderStickyHoverIn {
     0% {
         -webkit-box-shadow: 0 0 0 0 transparent;
@@ -1009,9 +922,6 @@ md-menu-item>.md-button::-moz-focus-inner {
     }
 }
 
-@media screen and (-ms-high-contrast:active) {
-}
-
 @-webkit-keyframes md-tab-content-hide {
     0% {
         opacity: 1
@@ -1040,39 +950,9 @@ md-menu-item>.md-button::-moz-focus-inner {
     }
 }
 
-@media (max-width: 959px) {
-}
-
-@media (min-width: 960px) {
-}
-
-@media (min-width: 1920px) {
-}
-
-@media screen and (-ms-high-contrast:active) {
-}
-
-@media screen and (-ms-high-contrast:active) {
-}
-
-@media (min-width: 0) and (max-width:959px) and (orientation:portrait) {
-}
-
-@media (min-width: 0) and (max-width:959px) and (orientation:landscape) {
-}
-
-@media (min-width: 960px) {
-}
-
 .md-whiteframe-z2 {
     -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2),0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12);
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2),0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12)
-}
-
-@media screen and (-ms-high-contrast:active) {
-}
-
-@media print {
 }
 
 @-moz-document url-prefix() {
@@ -1117,305 +997,8 @@ fb-canvas-bar .fb-canvas-bar-container {
     align-items: flex-end
 }
 
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:919px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:731px) {
-}
-
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:919px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:731px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:919px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:731px) {
-}
-
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:919px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:731px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 919px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 919px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
 .google-visualization-tooltip-action:hover {
     background-color: #eeeeee
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) and (max-width:419px) {
-}
-
-@media only screen and (max-width: 419px) {
-}
-
-@media only screen and (max-width: 419px) {
-}
-
-@media only screen and (max-width: 419px) {
-}
-
-@media only screen and (max-width: 419px) {
 }
 
 .c5e-overview-feature-card-content.flex {
@@ -1501,44 +1084,8 @@ fb-canvas-bar .fb-canvas-bar-container {
     }
 }
 
-@media only screen and (max-height: 899px) {
-}
-
-@media only screen and (min-height: 900px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 919px) {
-}
-
-@media only screen and (min-width: 1280px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
 md-menu-item>a.md-button {
     line-height: 48px
-}
-
-@media only screen and (max-width: 1000px) {
 }
 
 @keyframes tl-dz-icon-arrow-oscillate {
@@ -1551,102 +1098,6 @@ md-menu-item>a.md-button {
         -webkit-transform: translate(0,0);
         transform: translate(0,0)
     }
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (min-width: 920px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@-moz-document url-prefix() {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@-moz-document url-prefix() {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@-moz-document url-prefix() {
-}
-
-@-moz-document url-prefix() {
-}
-
-@-moz-document url-prefix() {
 }
 
 @-webkit-keyframes blink {
@@ -1671,9 +1122,6 @@ md-menu-item>a.md-button {
 
 .CodeMirror-line>span::selection,.CodeMirror-line>span>span::selection {
     background: #d7d4f0
-}
-
-@media print {
 }
 
 .cm-s-ambiance.CodeMirror-focused div.CodeMirror-selected,.cm-s-ambiance .CodeMirror-line::selection,.cm-s-ambiance .CodeMirror-line>span::selection,.cm-s-ambiance .CodeMirror-line>span>span::selection,.cm-s-ambiance .CodeMirror-line::-moz-selection,.cm-s-ambiance .CodeMirror-line>span::-moz-selection,.cm-s-ambiance .CodeMirror-line>span>span::-moz-selection {
@@ -1746,30 +1194,6 @@ md-menu-item>a.md-button {
 
 .cm-s-devsite-light div.CodeMirror-selected,.cm-s-devsite-light.CodeMirror-focused div.CodeMirror-selected,.cm-s-devsite-light .CodeMirror-line::selection,.cm-s-devsite-light .CodeMirror-line>span::selection,.cm-s-devsite-light .CodeMirror-line>span>span::selection,.cm-s-devsite-light .CodeMirror-line::-moz-selection,.cm-s-devsite-light .CodeMirror-line>span::-moz-selection,.cm-s-devsite-light .CodeMirror-line>span>span::-moz-selection {
     background-color: #ebebeb
-}
-
-@media print {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 989px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 989px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
 }
 
 fb-card-action-bar .fb-card-actionbar-searchbox .fb-card-action-bar-search-input:not(:focus)::-webkit-input-placeholder {
@@ -1870,9 +1294,6 @@ fb-card-action-bar .fb-card-actionbar-searchbox .fb-card-action-bar-search-input
     .c5e-nav-expanded .fb-appbar-top-left-has-menu .fb-appbar-top-left-menu-container {
         width:44px
     }
-}
-
-@media only screen and (max-width: 919px) and (min-width:920px) and (max-width:731px) {
 }
 
 @media only screen and (max-width: 919px) {
@@ -2292,18 +1713,6 @@ fb-alerts {
     }
 }
 
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:919px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:731px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
 .fb-featurebar {
     background: #039be5;
     display: -webkit-box;
@@ -2326,15 +1735,6 @@ fb-alerts {
 
 .fb-featurebar .fb-featurebar-crumbs::-webkit-scrollbar {
     display: none
-}
-
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:919px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:731px) {
 }
 
 .fb-featurebar .fb-featurebar-main {
@@ -2498,69 +1898,6 @@ fb-alerts {
     color: white
 }
 
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:919px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:731px) {
-}
-
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:919px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:731px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) {
-}
-
-@media only screen and (min-width: 920px) {
-}
-
-@media only screen and (min-width: 732px) {
-}
-
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:919px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:731px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
 .c5e-nav-billing {
     background: white;
     white-space: nowrap;
@@ -2665,12 +2002,6 @@ fb-navbar {
     }
 }
 
-@media only screen and (min-width: 920px) {
-}
-
-@media only screen and (max-width: 919px) {
-}
-
 .c5e-nav {
     -webkit-box-flex: 1 1 auto;
     -webkit-flex: 1 1 auto;
@@ -2755,9 +2086,6 @@ fb-navbar {
     transition: box-shadow .3s ease,padding .3s ease,width .3s cubic-bezier(0.4,0.0,0.2,1)
 }
 
-@media only screen and (min-width: 920px) {
-}
-
 .c5e-nav-heading {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -2775,9 +2103,6 @@ fb-navbar {
     height: 32px;
     -webkit-transition: height .3s ease,opacity .3s ease .15s;
     transition: height .3s ease,opacity .3s ease .15s
-}
-
-@media only screen and (min-width: 920px) {
 }
 
 .c5e-nav-item,.c5e-navbar-item-settings-collapsed .md-button {
@@ -2842,9 +2167,6 @@ fb-navbar {
     transition: opacity .3s ease
 }
 
-@media only screen and (min-width: 920px) {
-}
-
 .c5e-nav-group-root {
     background: #fafafa;
     -webkit-box-shadow: 0 -1px 0 rgba(0,0,0,0.12) inset!important;
@@ -2853,16 +2175,10 @@ fb-navbar {
     padding: 10px 0
 }
 
-@media only screen and (min-width: 920px) {
-}
-
 .c5e-navbar-item-overview {
     margin-right: 44px;
     -webkit-transition: margin-right .3s ease;
     transition: margin-right .3s ease
-}
-
-@media only screen and (min-width: 920px) {
 }
 
 .c5e-navbar-item-overview .c5e-nav-item {
@@ -2877,9 +2193,6 @@ fb-navbar {
     opacity: 1;
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease
-}
-
-@media only screen and (min-width: 920px) {
 }
 
 .c5e-navbar-item-settings .md-button .c5e-nav-icon {
@@ -2946,9 +2259,6 @@ fb-navbar {
     transition: max-height .3s ease,opacity .1s ease,transform .3s ease,visibility 0s linear .3s
 }
 
-@media only screen and (min-width: 920px) {
-}
-
 .c5e-navbar-item-settings-expanded {
     position: absolute;
     right: 0;
@@ -2960,9 +2270,6 @@ fb-navbar {
     visibility: visible;
     -webkit-transition: opacity .3s ease .15s,transform .3s ease;
     transition: opacity .3s ease .15s,transform .3s ease
-}
-
-@media only screen and (min-width: 920px) {
 }
 
 .c5e-navbar-item-settings-expanded .md-button {
@@ -3113,45 +2420,6 @@ fb-navbar-billing-widget {
     left: 0
 }
 
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (min-width: 600px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:919px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:731px) {
-}
-
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:919px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:731px) {
-}
-
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:919px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:731px) {
-}
-
 @keyframes c5e-config-file-step-enter {
     0% {
         opacity: 0
@@ -3162,12 +2430,6 @@ fb-navbar-billing-widget {
     }
 }
 
-@media only screen and (min-width: 600px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
 .c5e-input-container input[type="number"]::-webkit-inner-spin-button,.c5e-input-container input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0
@@ -3175,15 +2437,6 @@ fb-navbar-billing-widget {
 
 .c5e-input-container input::-webkit-input-placeholder,.c5e-input-container input::placeholder {
     color: rgba(0,0,0,0.38)
-}
-
-@media only screen and (max-width: 989px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
 }
 
 .c5e-modulehost-container {
@@ -3264,42 +2517,6 @@ fb-navbar-billing-widget {
 
 .c5e-footer a:hover {
     color: #039be5
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 983px) {
-}
-
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (max-width: 480px) {
-}
-
-@media only screen and (max-width: 983px) {
-}
-
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (min-width: 1280px) {
-}
-
-@media only screen and (max-width: 1279px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (min-width: 600px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
 }
 
 [md-grid] {
@@ -3452,424 +2669,10 @@ fb-navbar-billing-widget {
     }
 }
 
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (max-width: 663px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:919px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:731px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) {
-}
-
-@media only screen and (min-width: 920px) {
-}
-
-@media only screen and (min-width: 732px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 664px) and (max-width:983px) {
-}
-
-@media only screen and (min-width: 920px) and (max-width:1239px) {
-}
-
-@media only screen and (min-width: 732px) and (max-width:1051px) {
-}
-
-@media only screen and (min-width: 984px) and (max-width:920px) {
-}
-
-@media only screen and (min-width: 984px) {
-}
-
-@media only screen and (min-width: 1240px) {
-}
-
-@media only screen and (min-width: 1052px) {
-}
-
 .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder,.mat-form-field-can-float .mat-form-field-autofill-control:-webkit-autofill+.mat-form-field-placeholder-wrapper .mat-form-field-placeholder {
     -webkit-transform: translateY(-1.28125em) scale(.75) perspective(100px) translateZ(0.001px);
     transform: translateY(-1.28125em) scale(.75) perspective(100px) translateZ(0.001px);
     width: 133.33333%
-}
-
-@media screen and (-ms-high-contrast:active) {
-}
-
-@media screen and (-ms-high-contrast:active) {
 }
 
 md-menu-content {
