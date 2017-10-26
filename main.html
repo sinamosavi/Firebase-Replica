@@ -62,11 +62,21 @@
                     </a>
                     <fb-alerts>
                         <md-menu md-position-mode="target-right target" class="fb-appbar-more-actions-menu md-menu _md">
-                            <button id="g" onclick="menu2()" class="md-icon-button md-button md-ink-ripple md-dark-theme" type="button" md-theme="dark">
-                                <i class="material-icons">
-                                    more_vert
-                                </i>
-                            </button>
+                            <div class="dropdown">
+                                <button id="g" class="md-icon-button md-button md-ink-ripple md-dark-theme" type="button" md-theme="dark">
+                                    <i class="material-icons">
+                                        more_vert
+                                    </i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a class="md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" ui-sref="subscriptions.overview" role="menuitem" href="/subscriptions/overview">
+                                        Firebase doces
+                                    </a>
+                                    <a class="md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" ui-sref="subscriptions.overview" role="menuitem" href="/subscriptions/overview">
+                                        Alert subscriptions
+                                    </a>
+                                </div>
+                            </div>
                             <div class="_md md-open-menu-container md-whiteframe-z2" id="menu_container_2" aria-hidden="true" style="display: none;">
                                 <md-menu-content role="menu">
                                     <md-menu-item>
@@ -165,32 +175,11 @@
                         <!---->
                         <!---->
                         <md-menu class="c5e-navbar-item-settings md-menu _md c5e-navbar-item-settings-expanded" ng-if="::!!controller.settings" ng-repeat="settingsItemType in ::['expanded', 'collapsed']" ng-class="::['c5e-navbar-item-settings-' + settingsItemType]" md-offset="40 0" md-position-mode="target target">
-                            <button class="md-button md-gmp-blue-theme md-ink-ripple md-icon-button" type="button" onclick="menu2()">
+                            <button class="md-button md-gmp-blue-theme md-ink-ripple md-icon-button" type="button">
                                 <i class="c5e-nav-icon gmp-icons">
                                     gmp_nav20_settings
                                 </i>
                             </button>
-                            <div class="_md md-open-menu-container md-whiteframe-z2 md-gmp-blue-theme md-active md-clickable" id="menu_container_4" style="top: 8px; left: 163px; transform-origin: right top 0px;" aria-hidden="false">
-                                <md-menu-content class="fb-appbar-mobile-overflow-content md-dark-theme" role="menu">
-                                    <!----> <!----> <!---->
-                                    <md-menu-item>
-                                        <a class="c5e-external-link md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" href="https://firebase.google.com/docs/?authuser=0" fb-doc-href="/docs/" target="_blank" role="menuitem">
-                                            Firebase docs
-                                        </a>
-                                    </md-menu-item>
-                                    <!---->
-                                    <md-menu-divider ng-if="appBar.isAlertSubscriptionsVisible()" role="separator">
-
-                                    </md-menu-divider>
-                                    <!----> <!---->
-                                    <md-menu-item ng-if="appBar.isAlertSubscriptionsVisible()">
-                                        <a class="md-button md-gmp-blue-theme md-ink-ripple" ng-transclude="" ui-sref="subscriptions.overview" role="menuitem" href="/subscriptions/overview">
-                                            Alert subscriptions
-                                        </a>
-                                    </md-menu-item>
-                                    <!---->
-                                </md-menu-content>
-                            </div>
 
                         </md-menu>
                         <!---->
@@ -583,10 +572,6 @@
             "        visibility: visible;\n" +
             "        -webkit-transition: transform .3s cubic-bezier(0.4,0.0,1,1),visibility 0s ease .3s;\n" +
             "        transition: transform .3s cubic-bezier(0.4,0.0,1,1),visibility 0s ease .3s");
-    };
-
-    function menu2() {
-        document.getElementById("menu_container_4").setAttribute("style","display:block; visibility:visible");
     };
 
     function hide() {
