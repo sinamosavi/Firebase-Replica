@@ -192,12 +192,6 @@ select,button,textarea,input {
 }
 
 @-moz-document url-prefix() {
-    .layout-fill {
-        margin: 0;
-        width: 100%;
-        min-height: 100%;
-        height: 100%
-    }
 }
 
 .layout-align-center-start {
@@ -281,14 +275,6 @@ select,button,textarea,input {
     -webkit-flex-direction: row;
     -webkit-flex-direction: row;
     flex-direction: row
-}
-
-.md-calendar-scroll-mask .md-virtual-repeat-scroller::-webkit-scrollbar {
-    display: none
-}
-
-.md-datepicker-input::-ms-clear {
-    display: none
 }
 
 md-input-container:not(.md-input-has-value) input:not(:focus),md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-ampm-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-day-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-hour-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-millisecond-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-minute-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-month-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-second-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-week-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-year-field,md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-text {
@@ -997,10 +983,6 @@ fb-canvas-bar .fb-canvas-bar-container {
     align-items: flex-end
 }
 
-.google-visualization-tooltip-action:hover {
-    background-color: #eeeeee
-}
-
 .c5e-overview-feature-card-content.flex {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1112,92 +1094,8 @@ md-menu-item>a.md-button {
     }
 }
 
-.CodeMirror-gutter-wrapper::selection,.CodeMirror-gutter-wrapper::-moz-selection {
-    background-color: transparent
-}
-
-.CodeMirror-line::selection {
-    background: #d7d4f0
-}
-
 .CodeMirror-line>span::selection,.CodeMirror-line>span>span::selection {
     background: #d7d4f0
-}
-
-.cm-s-ambiance.CodeMirror-focused div.CodeMirror-selected,.cm-s-ambiance .CodeMirror-line::selection,.cm-s-ambiance .CodeMirror-line>span::selection,.cm-s-ambiance .CodeMirror-line>span>span::selection,.cm-s-ambiance .CodeMirror-line::-moz-selection,.cm-s-ambiance .CodeMirror-line>span::-moz-selection,.cm-s-ambiance .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(255,255,255,0.10)
-}
-
-.cm-s-blackboard .CodeMirror-line::selection,.cm-s-blackboard .CodeMirror-line>span::selection,.cm-s-blackboard .CodeMirror-line>span>span::selection,.cm-s-blackboard .CodeMirror-line::-moz-selection,.cm-s-blackboard .CodeMirror-line>span::-moz-selection,.cm-s-blackboard .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(37,59,118,.99)
-}
-
-.cm-s-cobalt .CodeMirror-line::selection,.cm-s-cobalt .CodeMirror-line>span::selection,.cm-s-cobalt .CodeMirror-line>span>span::selection,.cm-s-cobalt .CodeMirror-line::-moz-selection,.cm-s-cobalt .CodeMirror-line>span::-moz-selection,.cm-s-cobalt .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(179,101,57,.99)
-}
-
-.cm-s-erlang-dark .CodeMirror-line::selection,.cm-s-erlang-dark .CodeMirror-line>span::selection,.cm-s-erlang-dark .CodeMirror-line>span>span::selection,.cm-s-erlang-dark .CodeMirror-line::-moz-selection,.cm-s-erlang-dark .CodeMirror-line>span::-moz-selection,.cm-s-erlang-dark .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(179,101,57,.99)
-}
-
-.cm-s-lesser-dark .CodeMirror-line::selection,.cm-s-lesser-dark .CodeMirror-line>span::selection,.cm-s-lesser-dark .CodeMirror-line>span>span::selection,.cm-s-lesser-dark .CodeMirror-line::-moz-selection,.cm-s-lesser-dark .CodeMirror-line>span::-moz-selection,.cm-s-lesser-dark .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(69,68,59,.99)
-}
-
-.cm-s-mbo .CodeMirror-line::selection,.cm-s-mbo .CodeMirror-line>span::selection,.cm-s-mbo .CodeMirror-line>span>span::selection,.cm-s-mbo .CodeMirror-line::-moz-selection,.cm-s-mbo .CodeMirror-line>span::-moz-selection,.cm-s-mbo .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(113,108,98,.99)
-}
-
-.cm-s-mdn-like div.CodeMirror-selected,.cm-s-mdn-like .CodeMirror-line::selection,.cm-s-mdn-like .CodeMirror-line>span::selection,.cm-s-mdn-like .CodeMirror-line>span>span::selection,.cm-s-mdn-like .CodeMirror-line::-moz-selection,.cm-s-mdn-like .CodeMirror-line>span::-moz-selection,.cm-s-mdn-like .CodeMirror-line>span>span::-moz-selection {
-    background: #cfc
-}
-
-.cm-s-midnight .CodeMirror-line::selection,.cm-s-midnight .CodeMirror-line>span::selection,.cm-s-midnight .CodeMirror-line>span>span::selection,.cm-s-midnight .CodeMirror-line::-moz-selection,.cm-s-midnight .CodeMirror-line>span::-moz-selection,.cm-s-midnight .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(49,77,103,.99)
-}
-
-.cm-s-monokai .CodeMirror-line::selection,.cm-s-monokai .CodeMirror-line>span::selection,.cm-s-monokai .CodeMirror-line>span>span::selection,.cm-s-monokai .CodeMirror-line::-moz-selection,.cm-s-monokai .CodeMirror-line>span::-moz-selection,.cm-s-monokai .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(73,72,62,.99)
-}
-
-.cm-s-night .CodeMirror-line::selection,.cm-s-night .CodeMirror-line>span::selection,.cm-s-night .CodeMirror-line>span>span::selection,.cm-s-night .CodeMirror-line::-moz-selection,.cm-s-night .CodeMirror-line>span::-moz-selection,.cm-s-night .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(68,68,119,.99)
-}
-
-.cm-s-pastel-on-dark div.CodeMirror-selected,.cm-s-pastel-on-dark .CodeMirror-line::selection,.cm-s-pastel-on-dark .CodeMirror-line>span::selection,.cm-s-pastel-on-dark .CodeMirror-line>span>span::selection,.cm-s-pastel-on-dark .CodeMirror-line::-moz-selection,.cm-s-pastel-on-dark .CodeMirror-line>span::-moz-selection,.cm-s-pastel-on-dark .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(221,240,255,0.2)
-}
-
-.cm-s-rubyblue .CodeMirror-line::selection,.cm-s-rubyblue .CodeMirror-line>span::selection,.cm-s-rubyblue .CodeMirror-line>span>span::selection,.cm-s-rubyblue .CodeMirror-line::-moz-selection,.cm-s-rubyblue .CodeMirror-line>span::-moz-selection,.cm-s-rubyblue .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(56,86,111,0.99)
-}
-
-.cm-s-solarized.cm-s-dark.CodeMirror::selection,.cm-s-solarized.cm-s-dark .CodeMirror-line::-moz-selection,.cm-s-dark .CodeMirror-line>span::-moz-selection,.cm-s-dark .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(7,54,66,0.99)
-}
-
-.cm-s-solarized.cm-s-light div.CodeMirror-selected,.cm-s-solarized.cm-s-light .CodeMirror-line::selection,.cm-s-light .CodeMirror-line>span::selection,.cm-s-light .CodeMirror-line>span>span::selection,.cm-s-solarized.cm-s-light .CodeMirror-line::-moz-selection,.cm-s-ligh .CodeMirror-line>span::-moz-selection,.cm-s-ligh .CodeMirror-line>span>span::-moz-selection {
-    background: #eee8d5
-}
-
-.cm-s-twilight .CodeMirror-line::selection,.cm-s-twilight .CodeMirror-line>span::selection,.cm-s-twilight .CodeMirror-line>span>span::selection,.cm-s-twilight .CodeMirror-line::-moz-selection,.cm-s-twilight .CodeMirror-line>span::-moz-selection,.cm-s-twilight .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(50,50,50,0.99)
-}
-
-.cm-s-vibrant-ink .CodeMirror-line::selection,.cm-s-vibrant-ink .CodeMirror-line>span::selection,.cm-s-vibrant-ink .CodeMirror-line>span>span::selection,.cm-s-vibrant-ink .CodeMirror-line::-moz-selection,.cm-s-vibrant-ink .CodeMirror-line>span::-moz-selection,.cm-s-vibrant-ink .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(53,73,60,0.99)
-}
-
-.cm-s-xq-dark .CodeMirror-line::selection,.cm-s-xq-dark .CodeMirror-line>span::selection,.cm-s-xq-dark .CodeMirror-line>span>span::selection,.cm-s-xq-dark .CodeMirror-line::-moz-selection,.cm-s-xq-dark .CodeMirror-line>span::-moz-selection,.cm-s-xq-dark .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(39,0,122,0.99)
-}
-
-.cm-s-devsite-light div.CodeMirror-selected,.cm-s-devsite-light.CodeMirror-focused div.CodeMirror-selected,.cm-s-devsite-light .CodeMirror-line::selection,.cm-s-devsite-light .CodeMirror-line>span::selection,.cm-s-devsite-light .CodeMirror-line>span>span::selection,.cm-s-devsite-light .CodeMirror-line::-moz-selection,.cm-s-devsite-light .CodeMirror-line>span::-moz-selection,.cm-s-devsite-light .CodeMirror-line>span>span::-moz-selection {
-    background-color: #ebebeb
-}
-
-fb-card-action-bar .fb-card-actionbar-searchbox .fb-card-action-bar-search-input:not(:focus)::-webkit-input-placeholder {
-    color: rgba(0,0,0,0.54)
 }
 
 .fb-appbar-container {
@@ -1731,10 +1629,6 @@ fb-alerts {
     -webkit-transition: box-shadow .3s ease;
     transition: box-shadow .3s ease;
     z-index: 10
-}
-
-.fb-featurebar .fb-featurebar-crumbs::-webkit-scrollbar {
-    display: none
 }
 
 .fb-featurebar .fb-featurebar-main {
@@ -2315,9 +2209,6 @@ fb-navbar {
     padding-top: 12px
 }
 
-@media only screen and (min-width: 920px) {
-}
-
 .c5e-nav-footer {
     -webkit-box-shadow: 0 -1px 0 rgba(0,0,0,0.12);
     box-shadow: 0 -1px 0 rgba(0,0,0,0.12);
@@ -2334,15 +2225,9 @@ fb-navbar {
     transition: opacity .3s ease,transform .3s ease
 }
 
-@media only screen and (min-width: 920px) {
-}
-
 fb-navbar-billing-widget {
     display: block;
     width: 256px
-}
-
-@media only screen and (max-width: 919px) {
 }
 
 .c5e-nav-expando {
@@ -2390,21 +2275,6 @@ fb-navbar-billing-widget {
     pointer-events: none;
     -webkit-transition: transform .3s ease;
     transition: transform .3s ease
-}
-
-@media only screen and (min-width: 920px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
-}
-
-@media only screen and (max-width: 599px) {
 }
 
 .fb-role-disabled-popover-container {
@@ -2667,12 +2537,6 @@ fb-navbar-billing-widget {
     .c5e-nav-expanded [md-grid] [md-cell="12"] {
         width: 936px
     }
-}
-
-.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder,.mat-form-field-can-float .mat-form-field-autofill-control:-webkit-autofill+.mat-form-field-placeholder-wrapper .mat-form-field-placeholder {
-    -webkit-transform: translateY(-1.28125em) scale(.75) perspective(100px) translateZ(0.001px);
-    transform: translateY(-1.28125em) scale(.75) perspective(100px) translateZ(0.001px);
-    width: 133.33333%
 }
 
 md-menu-content {
