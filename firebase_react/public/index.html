@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div ui-view="" class="console_viewport layout-column" layout="column" flex="100">
+      <md-content layout="column" flex="" ng-class="{ 'c5e-nav-collapsed': !controller.navBarExpanded, 'c5e-nav-expanded': controller.navBarExpanded, 'c5e-mobile-nav-open': controller.mobileNavBarShown}" class="c5e-nav-expanded flex layout-column">
+        <div id="App"></div>
+        <div class="" ng-click="controller.onHideMobileNav()" role="button" tabindex="0">
+        </div>
+      </md-content>
+      <fb-build-info>
+      </fb-build-info>
+    </div>
+  </body>
+</html>
